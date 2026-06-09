@@ -4,11 +4,11 @@
 
 # 🧠 Awesome Attention Mechanisms
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/awesome-awesome-awesome)
 [![Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Attention?style=for-the-badge&color=gold)](https://github.com/ishandutta2007/Awesome-Attention/stargazers)
 [![Forks](https://img.shields.io/github/forks/ishandutta2007/Awesome-Attention?style=for-the-badge&color=blue)](https://github.com/ishandutta2007/Awesome-Attention/network/members)
 [![Issues](https://img.shields.io/github/issues/ishandutta2007/Awesome-Attention?style=for-the-badge&color=red)](https://github.com/ishandutta2007/Awesome-Attention/issues)
 [![License](https://img.shields.io/github/license/ishandutta2007/Awesome-Attention?style=for-the-badge&color=green)](LICENSE)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/badge.svg)](https://github.com/sindresorhus/awesome)
 
 **A comprehensive guide to Attention Mechanisms that powered the Transformer revolution in NLP, Computer Vision, and Generative AI.**
 
