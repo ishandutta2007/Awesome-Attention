@@ -29,3 +29,21 @@ Deploying Large Language Models (LLMs) requires specialized attention variants t
 * **Spatial Attention:** Focuses on specific geometric regions within an image, driving early convolutional neural networks (CNNs) in computer vision tasks.
 * **Channel Attention:** Evaluates the inter-dependencies between feature map channels to emphasize meaningful object characteristics in image recognition.
 
+
+---
+
+## ✨ Star History
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Attention&type=date&legend=bottom-right)](https://www.star-history.com/#ishandutta2007/Awesome-Attention&type=date&legend=bottom-right)
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the AI community**  
+Last updated: June 2026
+
+[**⬆ Back to Top**](#awesome-attention)
+
+</div>
