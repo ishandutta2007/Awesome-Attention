@@ -10,6 +10,12 @@
 [![Issues](https://img.shields.io/github/issues/ishandutta2007/Awesome-Attention?style=for-the-badge&color=red)](https://github.com/ishandutta2007/Awesome-Attention/issues)
 [![License](https://img.shields.io/github/license/ishandutta2007/Awesome-Attention?style=for-the-badge&color=green)](LICENSE)
 
+<br />
+<br />
+<a href="https://github.com/ishandutta2007?tab=followers">
+  <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.herokuapp.com/github/followers/ishandutta2007?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/>
+</a>
+
 **A comprehensive guide to Attention Mechanisms that powered the Transformer revolution in NLP, Computer Vision, and Generative AI.**
 
 [Explore Types](#-types-of-attention-mechanisms) • [Efficiency Optimizations](#3-advanced-llm--efficiency-optimizations) • [Multi-Modal](#4-multi-modal--domain-specific-variants) • [Star History](#-star-history)
