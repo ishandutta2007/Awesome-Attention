@@ -5,29 +5,35 @@ Attention mechanisms allow neural networks to focus on specific parts of an inpu
 
 ## 1. Core Structural Types
 
-* **Self-Attention (Scaled Dot-Product Attention):** Relates different positions of a single sequence to compute a representation of the same sequence (e.g., matching a pronoun to its noun within a sentence).
-* **Cross-Attention:** Relates positions from two different sequences. The Queries come from one sequence, while the Keys and Values come from another (e.g., translating English to French).
-* **Multi-Head Attention:** Runs multiple self-attention mechanisms (heads) in parallel. This allows the model to jointly attend to information from different representation subspaces at different positions.
+| Attention Mechanism | Description | Year | Original Paper |
+| :--- | :--- | :--- | :--- |
+| **Self-Attention** | Relates different positions of a single sequence to compute a representation (e.g., matching a pronoun to its noun). | 2016 | [Cheng et al.](https://arxiv.org/abs/1601.06733) |
+| **Cross-Attention** | Relates positions from two different sequences (e.g., Queries from one, Keys/Values from another). | 2017 | [Vaswani et al.](https://arxiv.org/abs/1706.03762) |
+| **Multi-Head Attention** | Runs multiple attention mechanisms in parallel to attend to information from different representation subspaces. | 2017 | [Vaswani et al.](https://arxiv.org/abs/1706.03762) |
 
 ## 2. Global vs. Local Scope
 
-* **Global (Soft) Attention:** Attends to all words or patches in the input sequence simultaneously. It is highly accurate but computationally expensive ($O(N^2)$ complexity).
-* **Local (Hard) Attention:** Focuses only on a small, selected window of the input sequence. It is computationally efficient but non-differentiable, often requiring reinforcement learning to train.
+| Attention Mechanism | Description | Year | Original Paper |
+| :--- | :--- | :--- | :--- |
+| **Global (Soft) Attention** | Attends to all words or patches in the input sequence simultaneously. Accurate but $O(N^2)$ complexity. | 2014 | [Bahdanau et al.](https://arxiv.org/abs/1409.0473) |
+| **Local (Hard) Attention** | Focuses on a small, selected window of the input. Efficient but non-differentiable (often uses RL). | 2015 | [Xu et al.](https://arxiv.org/abs/1502.03044) |
 
 ## 3. Advanced LLM & Efficiency Optimizations
 
-Deploying Large Language Models (LLMs) requires specialized attention variants to overcome the memory bottlenecks of long context windows:
-
-* **FlashAttention:** An exact, hardware-aware attention algorithm. It speeds up training and inference by reducing the memory read/write operations between GPU SRAM and HBM.
-* **Multi-Query Attention (MQA):** Uses multiple heads for Queries, but only a single key and value head. This drastically reduces the size of the KV cache and speeds up inference.
-* **Grouped-Query Attention (GQA):** A middle ground between Multi-Head and Multi-Query attention. It groups query heads together, with each group sharing a single Key/Value head, balancing speed and accuracy.
-* **Sliding Window Attention (Local/Sparse Attention):** Restricts the attention mechanism to a fixed window size around each token, reducing computational complexity from quadratic to linear.
+| Attention Mechanism | Description | Year | Original Paper |
+| :--- | :--- | :--- | :--- |
+| **FlashAttention** | Exact, hardware-aware algorithm that speeds up training/inference by reducing GPU memory I/O. | 2022 | [Dao et al.](https://arxiv.org/abs/2205.14135) |
+| **Multi-Query Attention (MQA)** | Uses multiple heads for Queries but a single head for Keys/Values to reduce KV cache size. | 2019 | [Shazeer](https://arxiv.org/abs/1911.02150) |
+| **Grouped-Query Attention (GQA)** | Groups query heads to share Key/Value heads, balancing Multi-Head and Multi-Query performance. | 2023 | [Ainslie et al.](https://arxiv.org/abs/2305.13245) |
+| **Sliding Window Attention** | Restricts attention to a fixed window around each token, reducing complexity from quadratic to linear. | 2020 | [Beltagy et al.](https://arxiv.org/abs/2004.05150) |
 
 ## 4. Multi-Modal & Domain-Specific Variants
 
-* **Cross-Modal Attention:** Aligns information across different types of media, such as mapping text tokens to visual patches in image generators (e.g., Stable Diffusion, Midjourney).
-* **Spatial Attention:** Focuses on specific geometric regions within an image, driving early convolutional neural networks (CNNs) in computer vision tasks.
-* **Channel Attention:** Evaluates the inter-dependencies between feature map channels to emphasize meaningful object characteristics in image recognition.
+| Attention Mechanism | Description | Year | Original Paper |
+| :--- | :--- | :--- | :--- |
+| **Cross-Modal Attention** | Aligns information across different media (e.g., mapping text tokens to visual patches). | 2015 | [Xu et al.](https://arxiv.org/abs/1502.03044) |
+| **Spatial Attention** | Focuses on specific geometric regions within an image, emphasizing relevant visual features. | 2015 | [Jaderberg et al.](https://arxiv.org/abs/1506.02025) |
+| **Channel Attention** | Evaluates inter-dependencies between feature map channels to emphasize meaningful object traits. | 2017 | [Hu et al.](https://arxiv.org/abs/1709.01507) |
 
 
 ---
